@@ -1,0 +1,334 @@
+html,body{
+    margin: 0;
+    background-color: rgb(250, 250, 250);
+    font-family: 'Segoe UI';
+}
+.main{
+    display:flex;
+    color: rgb(38,38,38);
+    margin-top: 32px;
+    padding-bottom: 32px;
+    justify-content: center;
+    align-items: center;
+    vertical-align: baseline;
+}
+.left{
+    display: flex;
+    height: 581.15px;
+    width: 380.32px;
+    background-image:url("img/background.png") ;
+    background-position: -45px 0px;
+    background-size: 468.32px 634.15px;
+    margin-bottom: 12px;
+    margin-right: 32px;
+}
+.left img{
+    width: 250px;
+    height: 539px;
+    visibility:visible;
+}
+.left-gallery{
+    display: flex;
+    flex-direction: column;
+    margin-left: 113px;
+    margin-top:27px;
+    position: relative;
+}
+.gallery{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.left-1{
+    animation: slideshow1 16s infinite;
+}
+@keyframes slideshow1 {
+    0% {opacity: 0.0}
+    13% {opacity: 1.0}
+    33.33% {opacity: 1.0}
+    43.33% {opacity: 0.0}
+    100% {opacity: 0.0}
+}
+.left-2{
+    animation: slideshow1 16s infinite;
+    animation-delay: 3.33s;
+}
+.left-3{
+    animation: slideshow1 16s infinite;
+    animation-delay: 6.66s;
+}
+.left-4{
+    animation: slideshow1 16s infinite;
+    animation-delay: 9.99s;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    justify-content: center;
+    margin-top: 12px;
+    max-width: 350px;
+    min-width: 348px;
+    height: 699px;
+}
+.login{
+    align-items: center;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin: 0 0 10px;
+    padding: 10px 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.login-title{
+    display: flex;
+    margin-bottom: 12px;
+    margin-top:36px
+}
+.login-title i img{
+    width: 176px;
+    height: 51px;
+    object-fit: cover;
+    object-position: 100% 0%;
+}
+.login-main{
+    margin-bottom: 10px;
+    display: block;
+    margin-top: 32px;
+}
+.login-container{
+    display: block;
+    margin: 0 40px 6px;
+    height: 38px;
+}
+.login-container label{
+    border: 0;
+    display: flex;
+    flex: 1 0 0px;
+    font: inherit;
+    font-size: 100%;
+    height: 36px;
+    margin: 0;
+    min-width: 268px;
+    padding: 0;
+    position: relative;
+    vertical-align: baseline;
+    color: rgb(100,100,100);
+}
+.login-container input{
+    background: rgb(250,250,250);
+    border: 1px solid rgba(100, 100, 100,0.3);
+    border-radius: 2px;
+    flex: 1 0 auto;
+    margin: 0;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    width: 30px;
+}
+.label-float{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+    transition: 0.2s ease all;
+}
+.login-container input:focus ~ .label-float{
+	top: 0px;
+	left: 8px;
+	font-size: 13px;
+	opacity: 1;
+}
+.login-container input:focus{
+    border: 1px solid rgb(142,142,142);
+}
+.login-login{
+    background-color: rgb(0, 149, 246);
+    opacity: 0.7;
+    border: none;
+    border-radius: 8px;
+    height: 32px;
+    margin-top: 8px;
+    color: rgb(255,255,255);
+    text-align: center;
+    min-width: 268px;
+}
+.login-sep{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-width: 268px;
+    margin-top: 15px;
+}
+.login-line{
+    position: relative;
+    height: 1px;
+    background-color: rgb(219, 219, 219);
+    width: 107.039px;
+    top: 0.45em;  
+}
+.login-or{
+    margin:0px 18px;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: rgb(142,142,142);
+}
+.login-facebook{
+    border: 0;
+    color: #385185;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0;
+    position: relative;
+    background-color: rgb(255,255,255);
+    cursor: pointer;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    margin: 8px 40px;
+}
+.login-container-facebook{
+    min-width: 268px;
+    display: flex;
+    justify-content: center;
+}
+.login-facebook-icon{
+    margin-right: 8px;
+}
+.login-forgot{
+    display: flex;
+    justify-content: center;
+    font-size: 12px;
+}
+.login-forgot a{
+    text-decoration: none;
+    color: rgb(38,38,38);
+}
+.login-create{
+    align-items: center;
+    background-color: rgb(255,255,255);
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 1px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    font: inherit;
+    font-size: 100%;
+    padding: 5px 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.login-create a{
+    text-decoration: none;
+    color: rgb(0,149,246);
+    font-weight: 600;
+}
+.login-google{
+    width: 134.28px;
+    height: 40px;
+}
+.login-micro{
+    width: 110.77px;
+    height: 40px;
+}
+.login-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login-app-slogan{
+    margin: 10px 20px 10px 20px;
+}
+.login-app-download{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5px 0 5px 0;
+    gap: 20px;
+}
+.footer-top{
+    display: flex;
+    gap: 1vw;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: stretch;
+    margin-top:24px;
+}
+.footer-top a{
+    text-decoration: none;
+    color: rgb(142,142,142);
+    font-size: 12px;
+}
+
+.footer-bot{
+    margin: 12px 0px;
+        display: flex;
+        gap: 1vw;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: baseline;
+        align-content: baseline;
+        font-size: 12px;
+        color: rgb(142,142,142);
+}
+.footer-bot select{
+    border: none;
+    width: 5.5vw;
+    color: rgb(142,142,142);
+    font-size: 12px;
+    font-family: 'Segoe UI';
+    background-color: rgb(250, 250, 250);
+    text-align: center;
+    cursor: pointer;
+}
+
+@media screen and (max-width:820px){
+    .left{
+        display: none;
+    }
+    .main{
+        margin-top: 180px;
+        margin-bottom: 150px;
+    }}
+
+    
+@media  screen and (max-width:414px) {
+    .left{
+        display: none;
+    }
+    .main{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .right{
+        height: 550px;
+    }
+    .login{
+        background-color: rgb(250, 250, 250);
+        border: none;
+    }
+    .login-create{
+        background-color: rgb(250, 250, 250);
+        border: none;
+    }
+    .footer-top{
+        margin: 20px 30px;
+        gap: 2vw;
+    }
+    .footer-bot select {
+        width: 16vw;
+}
+    .footer-bot{
+        margin-bottom: 50px;
+    }
+}
